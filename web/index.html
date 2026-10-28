@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PayMitra</title>
+  <meta name="description" content="PayMitra - the AI receivables officer that gets MSMEs paid within 45 days.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="shell">
+    <aside class="side" aria-label="Main navigation">
+      <a class="brand" href="#/today">
+        <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="3" width="22" height="26" rx="3" fill="var(--ink)"/><rect x="4" y="3" width="5" height="26" rx="2" fill="var(--late)"/><path d="M13 11h9M13 16h9M13 21h6" stroke="var(--paper)" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>PayMitra</span>
+      </a>
+      <nav>
+        <a href="#/today" data-nav="today">Today</a>
+        <a href="#/invoices" data-nav="invoices">Invoices</a>
+        <a href="#/approvals" data-nav="approvals">Approvals <b class="count" id="nav-approvals" hidden></b></a>
+        <a href="#/cash" data-nav="cash">Cash forecast</a>
+        <a href="#/buyers" data-nav="buyers">Buyers</a>
+        <a href="#/data" data-nav="data">Add data</a>
+        <a href="#/how" data-nav="how">How it works</a>
+      </nav>
+      <div class="side-foot">
+        <div id="mode-pill" class="mode"></div>
+        <button class="linkish" id="logout" hidden>Log out</button>
+      </div>
+    </aside>
+
+    <main id="main" tabindex="-1">
+      <div id="view" aria-live="polite"></div>
+    </main>
+
+    <aside class="phone-wrap" id="phone" aria-label="Owner's WhatsApp">
+      <div class="phone">
+        <header class="phone-top">
+          <div class="avatar" aria-hidden="true">PM</div>
+          <div><strong>PayMitra</strong><span>WhatsApp to Rajesh</span></div>
+          <button class="phone-close" id="phone-close" aria-label="Close WhatsApp panel">&times;</button>
+        </header>
+        <div class="chat" id="chat"></div>
+        <div class="quick" role="group" aria-label="Quick replies">
+          <button data-say="1">1 Approve</button>
+          <button data-say="2">2 Edit</button>
+          <button data-say="3">3 Hold</button>
+          <button data-say="brief">Brief</button>
+        </div>
+        <form class="compose" id="compose">
+          <label class="sr" for="say">Message</label>
+          <input id="say" autocomplete="off" placeholder="Type 1, 2, 3 or 'brief'">
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </aside>
+  </div>
+  <button class="phone-fab" id="phone-open" aria-controls="phone">WhatsApp</button>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <div class="tip" id="tip" role="tooltip" hidden></div>
+  <script src="/app.js"></script>
+</body>
+</html>

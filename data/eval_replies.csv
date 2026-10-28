@@ -1,0 +1,61 @@
+text,true_intent
+"Payment will be released in this Friday's run.",promise
+"Sir 50% next week, balance after QC",promise
+"We will clear the invoice by 15/11.",promise
+"Payment processed today, UTR will follow.",promise
+"Kal tak payment ho jayega sir",promise
+"भुगतान अगले सोमवार तक कर देंगे",promise
+"Agle hafte payment release kar denge",promise
+"Will pay 30% this week and the rest by month end",promise
+"Your invoice is approved; payment scheduled for the 10th run on 10/11",promise
+"Payment transferred today via NEFT",promise
+"Month end tak pura payment clear karenge",promise
+"We will release the amount in 7 days",promise
+"Payment due in our next cycle on 25 Nov",promise
+"Finance has approved, payment on Monday",promise
+"आज शाम तक पेमेंट भेज देंगे",promise
+"Half payment tomorrow, baaki next week",promise
+"Releasing 60% now and 40% after inspection",promise
+"Cheque will be dispatched on Thursday",promise
+"There is a rate difference on 40 pcs, please issue a credit note",dispute
+"20 pieces were rejected in QC, raise a debit note",dispute
+"Material received short by 15 units",dispute
+"Quantity mismatch with GRN, cannot process",dispute
+"Rate galat lagaya hai invoice mein, PO rate check kijiye",dispute
+"Maal kharab aaya tha, replacement ke baad payment hoga",dispute
+"Invoice amount does not match PO value",dispute
+"We will deduct penalty for late delivery",dispute
+"Goods were damaged in transit, claim pending",dispute
+"GST rate on invoice is wrong, please revise",dispute
+"Wrong rate charged, PO says 380 per unit",dispute
+"Part of the consignment was returned, adjust the invoice",dispute
+"माल खराब निकला, कटौती करनी पड़ेगी",dispute
+"Defective parts in lot 3, hold payment until resolved",dispute
+"Please share the GRN copy for this invoice",query
+"Kindly send the e-way bill and POD",query
+"Which PO is this invoice against?",query
+"Can you share the delivery challan?",query
+"PO copy bhejiye please",query
+"Please provide your bank details on letterhead",query
+"Kindly share the Udyam certificate for our records",query
+"Need the signed delivery receipt to process",query
+"Is this invoice for the October shipment?",query
+"Please send the original invoice by courier",query
+"GRN copy chahiye processing ke liye",query
+"Kindly provide the test certificate for this batch",query
+"Share the corrected invoice with PO line number?",query
+"कृपया डिलीवरी चालान भेजिए",query
+"Will check and revert",noise
+"It's in process",noise
+"Noted, thanks",noise
+"Out of office until Monday",noise
+"Received with thanks",noise
+"Dekhte hain sir",noise
+"Under process with accounts team",noise
+"Auto-reply: I am on leave",noise
+"Ok",noise
+"Thank you for your email",noise
+"We will look into it",noise
+"Forwarded to the concerned team",noise
+"देखते हैं",noise
+"Acknowledged",noise

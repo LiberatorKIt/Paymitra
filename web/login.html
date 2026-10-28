@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PayMitra - sign in</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="login-page">
+  <form class="login" id="login">
+    <svg width="40" height="40" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="3" width="22" height="26" rx="3" fill="var(--ink)"/><rect x="4" y="3" width="5" height="26" rx="2" fill="var(--late)"/><path d="M13 11h9M13 16h9M13 21h6" stroke="var(--paper)" stroke-width="2" stroke-linecap="round"/></svg>
+    <h1>PayMitra</h1>
+    <p>Get paid within 45 days, without losing the customer.</p>
+    <label for="pw">Password</label>
+    <input id="pw" type="password" autocomplete="current-password" required autofocus>
+    <button type="submit" class="btn primary">Sign in</button>
+    <p class="err" id="err" hidden></p>
+  </form>
+  <script>
+    document.getElementById('login').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const r = await fetch('/api/login', {method: 'POST', headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({password: document.getElementById('pw').value})});
+      if (r.ok) { location.href = '/'; return; }
+      const err = document.getElementById('err');
+      err.textContent = 'That password is not right. Ask the person who set up PayMitra for it.';
+      err.hidden = false;
+    });
+  </script>
+</body>
+</html>
